@@ -3,10 +3,7 @@ import Login from "./components/Login";
 import "./App.css";
 import {
   BrowserRouter,
-  Routes, Route,
-  // Switch, 
-  // NavLink, 
-  Link
+  Routes, Route
 } from 'react-router-dom'
 import Message from './components/customer/Message';
 import Overview from './components/customer/Overview';

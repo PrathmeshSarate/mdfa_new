@@ -7,41 +7,41 @@ function HomeApp() {
 <>
     <header id="header" className="header fixed-top bg-white">
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a
-          href="index.html"
+        <Link
+          to="/"
           className="logo d-flex align-items-center"
           title="Home Page"
         >
           <img src="assets/img/home2.png" alt="" />
           <span style={{ marginLeft: 5, marginTop: 10 }}>MDFA</span>
-        </a>
+        </Link>
         
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a className="nav-link scrollto active" href="#hero">
+              <Link className="nav-link scrollto active" to="#hero">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about">
+              <Link className="nav-link scrollto" to="#about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#services">
+              <Link className="nav-link scrollto" to="#services">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#team">
+              <Link className="nav-link scrollto" to="#team">
                 Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#contact">
+              <Link className="nav-link scrollto" to="#contact">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -71,7 +71,7 @@ function HomeApp() {
           <div>
             <div className="text-center text-lg-start">
               <Link
-                to="/login"
+                to="#about"
                 className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
               >
                 <span>Get Started</span>
@@ -274,18 +274,18 @@ function HomeApp() {
                   alt=""
                 />
                 <div className="social">
-                  <a href="">
+                  <Link to="">
                     <i className="bi bi-twitter" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-facebook" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-instagram" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-linkedin" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="member-info">
@@ -308,18 +308,18 @@ function HomeApp() {
                   alt=""
                 />
                 <div className="social">
-                  <a href="">
+                  <Link to="">
                     <i className="bi bi-twitter" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-facebook" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-instagram" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-linkedin" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="member-info">
@@ -342,18 +342,18 @@ function HomeApp() {
                   alt=""
                 />
                 <div className="social">
-                  <a href="">
+                  <Link to="">
                     <i className="bi bi-twitter" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-facebook" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-instagram" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-linkedin" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="member-info">
@@ -376,18 +376,18 @@ function HomeApp() {
                   alt=""
                 />
                 <div className="social">
-                  <a href="">
+                  <Link to="">
                     <i className="bi bi-twitter" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-facebook" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-instagram" />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="bi bi-linkedin" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="member-info">
@@ -622,10 +622,10 @@ function HomeApp() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" className="logo d-flex align-items-center">
+            <Link to="/" className="logo d-flex align-items-center">
               <img src="assets/img/home2.png" alt="" />
               <span>Govardhan</span>
-            </a>
+            </Link>
             <p>Maharashtra Top rated Milk Producer Company</p>
             <div className="social-links mt-3">
               <a className="twitter">
