@@ -26,7 +26,7 @@
     if (all) {
       select(el, all).forEach(e => e.addEventListener(type, listener))
     } else {
-      select(el, all).addEventListener(type, listener)
+      // select(el, all).addEventListener("DOMContentLoaded",type, listener)
     }
   }
 
@@ -111,10 +111,10 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-   
+    // select('#navbar').classList.toggle('navbar-mobile')
+    // this.classList.toggle('bi-list')
+    // this.classList.toggle('bi-x')
+    console.log('hiiii');
   })
 
   /**

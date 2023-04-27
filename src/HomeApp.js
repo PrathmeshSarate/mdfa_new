@@ -15,6 +15,7 @@ function HomeApp() {
           <img src="assets/img/home2.png" alt="" />
           <span style={{ marginLeft: 5, marginTop: 10 }}>MDFA</span>
         </a>
+        
         <nav id="navbar" className="navbar">
           <ul>
             <li>
@@ -51,7 +52,7 @@ function HomeApp() {
               </Link>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle" />
+          <i className="bi bi-list mobile-nav-toggle"/>
         </nav>
         {/* .navbar */}
       </div>
@@ -69,13 +70,13 @@ function HomeApp() {
           </h2>
           <div>
             <div className="text-center text-lg-start">
-              <a
-                href="#about"
+              <Link
+                to="/login"
                 className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
               >
                 <span>Get Started</span>
                 <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
