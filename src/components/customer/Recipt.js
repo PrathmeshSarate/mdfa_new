@@ -1,136 +1,68 @@
-import React from 'react'
-import Topbar from './Topbar'
+import React from "react";
+import Topbar from "./Topbar";
 
 function Recipt() {
   return (
     <>
-    
-    {/* Content Wrapper */}
-    <div id="content-wrapper" className="d-flex flex-column">
+      {/* Content Wrapper */}
+      <div id="content-wrapper" className="d-flex flex-column">
         {/* Main Content */}
         <div id="content">
-            {  <Topbar title="Recipt"/>}
-            {/* Begin Page Content */}
-            <div className="container-fluid">
-                {/* Content Row Card  */}
-                <div className="row">
-                    {/* Cow Milk supplying (Monthly) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-primary shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Cow Milk supplying{" "}
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            180 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-primary p-2">
-                                            Month
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Buffelo Milk supplying (Monthly) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-success shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Buffelo Milk supplying
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            120 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-primary p-2">
-                                            Month
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Cow Milk supplying (Day) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-info shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Cow Milk supplying{" "}
-                                        </div>
-                                        <div className="row no-gutters align-items-center">
-                                            <div className="col-auto">
-                                                <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                                    8 Liter's
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-dark p-2">Day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Buffelo Milk supplying (Day) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-warning shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Buffelo Milk supplying
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            9 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-dark p-2">Day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          {<Topbar title="Recipt" />}
+          {/* Begin Page Content */}
+          <div className="container-fluid">
+            <div className="container-fluid pb-5">
+              <div className="d-flex justify-content-center">
+                <div className="col-md-4">
+                  <h4 className="py-4 text-center">
+                    Selcet date for Recipt{" "}
+                    <span className="badge bg-dark ms-2">DAY</span>{" "}
+                  </h4>
+                  <input id="startDate" className="form-control" type="date" />
                 </div>
-                {/* Content Row Overview Chart*/}
-                <div className="row">
-                    {/* Area Chart */}
-                    <div className="col-xl-12 col-lg-12">
-                        <div className="card shadow mb-4">
-                            {/* Card Header - Dropdown */}
-                            <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 className="m-0 font-weight-bold text-primary">
-                                    Overview
-                                </h6>
-                            </div>
-                            {/* Card Body */}
-                            <div className="card-body">
-                                <div className="chart-area">
-                                    <canvas id="myAreaChart" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            {/* /.container-fluid */}
+
+            <hr className="border-2 border-dark" />
+
+            <div className="container-fluid">
+              <div className="d-flex justify-content-center">
+                <form className="row g-3 text-center justify-content-center ">
+                {/* <div className="col-md-12"> */}
+                  <h4 className="py-4 ">
+                    Selcet date for Recipt{" "}
+                    <span className="badge bg-primary ms-2">Month</span>
+                  </h4>
+                  <div className="col-auto " style={{display: "inherit"}}>
+                    <label htmlFor="staticEmail2" className="d-inline px-4 align-self-center">
+                      From :
+                    </label>
+                    <input id="startDate" className="form-control" type="date" />
+                  </div>
+                  <div className="col-auto " style={{display: "inherit"}}>
+                    <label htmlFor="staticEmail2" className="d-inline px-4 align-self-center">
+                      To :
+                    </label>
+                    <input id="startDate" className="form-control" type="date" />
+                  </div>
+                  
+                  {/* </div> */}
+                </form>
+
+                
+                  {/* 
+                  <input id="startDate" className="form-control" type="date" /> */}
+                
+              </div>
+            </div>
+          </div>
+          {/* /.container-fluid */}
         </div>
         {/* End of Main Content */}
-    </div>
-    {/* End of Content Wrapper */}
+      </div>
+      {/* End of Content Wrapper */}
     </>
-  )
+  );
 }
 
-export default Recipt
+export default Recipt;

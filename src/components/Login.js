@@ -44,27 +44,8 @@ function Login() {
                               />
                             </div>
                           </div>
-                          {/* <div className="col-sm-6">
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                id="inlineFormCheck"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="inlineFormCheck"
-                              >
-                                Remember me
-                              </label>
-                            </div>
-                          </div> */}
-                          {/* <div className="col-sm-6">
-                            <a href="#" className="float-end text-primary">
-                              Forgot Password?
-                            </a>
-                          </div> */}
                           <div className="col-12">
+                            
                             <Link to="/member/overview"
                               type="submit" style={{backgroundColor:uniBackColor,color:"white"}}
                               className="btn  px-4 float-end mt-4"
@@ -87,9 +68,7 @@ function Login() {
               </div>
             </div>
           </div>
-        <div className="p-3">
-          <Link className="btn btn-sm btn-dark" to="/">Back</Link>
-        </div>
+        
 
         </div>
       </div>

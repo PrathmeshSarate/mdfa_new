@@ -1,6 +1,5 @@
 import HomeApp from "./HomeApp";
 import Login from "./components/Login";
-import dai from "./assets/img/dai.jpg";
 import "./App.css";
 import {
   BrowserRouter,
@@ -9,8 +8,6 @@ import {
   // NavLink, 
   Link
 } from 'react-router-dom'
-import Dash from "./components/customer/Dash";
-
 import Message from './components/customer/Message';
 import Overview from './components/customer/Overview';
 import Sidebar from './components/customer/Sidebar';
@@ -29,18 +26,11 @@ function App() {
 
           <Route path="/login" element={<Login />} />
 
-          <Route path="/dash" element={<HomeApp/>} />
+          <Route path="/dash" element={<HomeApp />} />
 
-          <Route path="/member/ahi" element={
-            <React.Fragment>
-              <div id="wrapper">
-              <Sidebar/>
-              <Ahi/>
-              </div>
-            </React.Fragment>
-           } />
 
           <Route exact path="/member/overview" element={
+
             <React.Fragment>
               {/* Page Wrapper */}
               <div id="wrapper">
@@ -51,35 +41,43 @@ function App() {
           } />
 
           <Route path="/member/message" element={
-           <React.Fragment>
-           {/* Page Wrapper */}
-           <div id="wrapper">
-             <Sidebar />
-             <Message />
-           </div>
-         </React.Fragment>
+            <React.Fragment>
+              {/* Page Wrapper */}
+              <div id="wrapper">
+                <Sidebar />
+                <Message />
+              </div>
+            </React.Fragment>
           } />
 
           <Route path="/member/profile" element={
-           <React.Fragment>
-           {/* Page Wrapper */}
-           <div id="wrapper">
-             <Sidebar />
-             <Profile/>
-           </div>
-         </React.Fragment>
+            <React.Fragment>
+              {/* Page Wrapper */}
+              <div id="wrapper">
+                <Sidebar />
+                <Profile />
+              </div>
+            </React.Fragment>
           } />
 
           <Route path="/member/recipt" element={
-           <React.Fragment>
-           {/* Page Wrapper */}
-           <div id="wrapper">
-             <Sidebar />
-             <Recipt/>
-           </div>
-         </React.Fragment>
+            <React.Fragment>
+              {/* Page Wrapper */}
+              <div id="wrapper">
+                <Sidebar />
+                <Recipt />
+              </div>
+            </React.Fragment>
           } />
 
+          <Route path="/member/ahi" element={
+            <React.Fragment>
+              <div id="wrapper">
+                <Sidebar />
+                <Ahi />
+              </div>
+            </React.Fragment>
+          } />
         </Routes>
 
       </BrowserRouter>

@@ -5,7 +5,7 @@ function Sidebar() {
     let location = useLocation();
 
     useEffect(() => {
-        console.log(location.pathname);
+        // console.log(location.pathname);
     }, [location]);
 
     
@@ -17,56 +17,56 @@ function Sidebar() {
                 id="accordionSidebar"
             >
                 {/* Sidebar - Brand */}
-                <a
+                <Link
                     className="sidebar-brand d-flex align-items-center justify-content-center"
-                    href="index.html"
+                    to="/"
                 >
                     <div className="sidebar-brand-icon rotate-n-15">
-                        <i className="fas fa-laugh-wink" />
+                        <i className="pe-2 fas fa-lg fa-laugh-wink" />
                     </div>
                     <div className="sidebar-brand-text mx-3">Member</div>
-                </a>
+                </Link>
                 {/* Divider */}
-                {/* <hr class="sidebar-divider my-0"> */}
+                {/* <hr className="sidebar-divider my-0"> */}
                 {/* Nav Item - Dashboard */}
                 <li className={`nav-item ${location.pathname==="/member/overview"? "active": ""}`}>
                     <Link className="nav-link" to="/member/overview"> 
-                        <i className="fas fa-fw fa-tachometer-alt" />
+                        <i className="pe-2 fas fa-lg fa-fw fa-tachometer-alt" />
                         <span>Dashboard</span>
                     </Link>
                 </li>
                 {/* Nav Item - Message */}
                 <li className={`nav-item ${location.pathname==="/member/message"? "active": ""}`}>
                     <Link className="nav-link" to="/member/message">
-                        <i className="fas fa-envelope fa-fw" />
+                        <i className="pe-2 fas fa-lg fa-envelope fa-fw" />
                         <span>Message</span>
                     </Link>
                 </li>
                 {/* Nav Item - Animal Health info */}
                 <li className={`nav-item ${location.pathname==="/member/ahi"? "active": ""}`}>
                     <Link className="nav-link" to="/member/ahi">
-                        <i className="fas fa-notes-medical" />
+                        <i className="pe-2 fas fa-lg fa-notes-medical" />
                         <span>Animal Health info</span>
                     </Link>
                 </li>
                 {/* Nav Item - Profile */}
                 <li className={`nav-item ${location.pathname==="/member/profile"? "active": ""}`}>
                     <Link className="nav-link" to="/member/profile">
-                        <i className="fas fa-fw fa-user-alt" />
+                        <i className="pe-2 fas fa-lg fa-fw fa-user-alt" />
                         <span>Profile</span>
                     </Link>
                 </li>
                 {/* Nav Item - Recipt */}
                 <li className={`nav-item ${location.pathname==="/member/recipt"? "active": ""}`}>
                     <Link className="nav-link" to="/member/recipt">
-                        <i className="fas fa-receipt" />
+                        <i className="pe-2 fas fa-lg fa-receipt" />
                         <span>Recipt</span>
                     </Link>
                 </li>
                 {/* Nav Item - Logout */}
                 <li className="nav-item ">
                     <Link className="nav-link" to="/">
-                        <i className="fas fa-sign-out-alt" />
+                        <i className="pe-2 fas fa-lg fa-sign-out-alt" />
                         <span>Logout</span>
                     </Link>
                 </li>

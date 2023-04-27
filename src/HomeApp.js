@@ -95,6 +95,10 @@ function HomeApp() {
     {/* ======= About Section ======= */}
     <section id="about" className="about">
       <div className="container">
+      <header className="section-header">
+          <h2>About</h2>
+          <p>The story behind our brand</p>
+        </header>
         <div className="row gx-0">
           <div className="col-lg-6 d-flex flex-column justify-content-center">
             <div className="content">
@@ -108,7 +112,7 @@ function HomeApp() {
                 Extension, Animal Health, Breeding, Milk Processing, Product
                 making and Marketing.
               </p>
-              <div className="text-center text-lg-start">
+              {/* <div className="text-center text-lg-start">
                 <a
 
                   className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
@@ -116,7 +120,7 @@ function HomeApp() {
                   <span>Read More</span>
                   <i className="bi bi-arrow-right" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-6 d-flex align-items-center">
@@ -128,7 +132,7 @@ function HomeApp() {
     {/* End About Section */}
 
     {/* ======= Counts Section ======= */}
-    <section id="counts" className="counts">
+    {/* <section id="counts" className="counts">
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-3 col-md-6" title="Total Clients">
@@ -147,7 +151,7 @@ function HomeApp() {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     {/* End Counts Section */}
 
     {/* ======= Services Section ======= */}

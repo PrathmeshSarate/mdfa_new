@@ -2,135 +2,71 @@ import React from 'react'
 import Topbar from './Topbar';
 
 function Ahi() {
-  return (
-  <>
+    return (
+        <>
 
-    {/* Content Wrapper */}
-    <div id="content-wrapper" className="d-flex flex-column">
-        {/* Main Content */}
-        <div id="content">
-            {  <Topbar title="Animal Health Info"/>}
-            {/* Begin Page Content */}
-            <div className="container-fluid">
-                {/* Content Row Card  */}
-                <div className="row">
-                    {/* Cow Milk supplying (Monthly) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-primary shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Cow Milk supplying{" "}
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            180 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-primary p-2">
-                                            Month
-                                        </span>
-                                    </div>
+            {/* Content Wrapper */}
+            <div id="content-wrapper" className="d-flex flex-column">
+                {/* Main Content */}
+                <div id="content">
+                    {<Topbar title="Animal Health Info" />}
+                    {/* Begin Page Content */}
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <div className="p-5 bg-danger text-white rounded">
+                                    <h1>Lumpy Skin Disease in Cattle</h1>
+                                    <span className="badge bg-dark p-3">
+                                        PROFESSIONAL VERSION Lumpy Skin Disease in Cattle <br />
+                                        By Paul Gibbs , BVSc, PhD, FRCVS, Department of Infectious Diseases and
+                                        Immunology,
+                                        <br />
+                                        College of Veterinary Medicine, University of Florida
+                                    </span>
+                                    <p className="pt-5">
+                                        Lumpy skin disease is a viral infection of cattle. Originally found in
+                                        Africa, it has also spread to countries in the Middle East, Asia, and
+                                        eastern Europe. <br />
+                                        Clinical signs include fever, lacrimation, hypersalivation, and
+                                        characteristic skin eruptions. Diagnosis is by histopathology, virus
+                                        isolation, or PCR. Attenuated vaccines may help control outbreaks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="p-5 bg-success text-white rounded">
+                                    <h1>Treatment and Prevention of Lumpy Skin Disease in Cattle</h1>
+                                    <span className="badge bg-dark p-3">
+                                        PROFESSIONAL VERSION Lumpy Skin Disease in Cattle <br />
+                                        By Paul Gibbs , BVSc, PhD, FRCVS, Department of Infectious Diseases and
+                                        Immunology,
+                                        <br />
+                                        College of Veterinary Medicine, University of Florida
+                                    </span>
+                                    <p className="pt-5">
+                                        Attenuated virus vaccines may help control spread <br />
+                                        <br />
+                                        The spread of lumpy skin disease in recent years beyond its ancestral
+                                        home of Africa is alarming. Quarantine restrictions have proved to be of
+                                        limited use. Vaccination with attenuated virus offers the most promising
+                                        method of control and was effective in halting the spread of the disease
+                                        in the Balkans. <br />
+                                        Administration of antibiotics to control secondary infection and good
+                                        nursing care are recommended, but the large number of affected animals
+                                        within a herd may preclude treatment.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    {/* Buffelo Milk supplying (Monthly) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-success shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Buffelo Milk supplying
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            120 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-primary p-2">
-                                            Month
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Cow Milk supplying (Day) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-info shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Cow Milk supplying{" "}
-                                        </div>
-                                        <div className="row no-gutters align-items-center">
-                                            <div className="col-auto">
-                                                <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                                    8 Liter's
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-dark p-2">Day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Buffelo Milk supplying (Day) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-warning shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Buffelo Milk supplying
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            9 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-dark p-2">Day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* /.container-fluid */}
                 </div>
-                {/* Content Row Overview Chart*/}
-                <div className="row">
-                    {/* Area Chart */}
-                    <div className="col-xl-12 col-lg-12">
-                        <div className="card shadow mb-4">
-                            {/* Card Header - Dropdown */}
-                            <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 className="m-0 font-weight-bold text-primary">
-                                    Overview
-                                </h6>
-                            </div>
-                            {/* Card Body */}
-                            <div className="card-body">
-                                <div className="chart-area">
-                                    <canvas id="myAreaChart" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/* End of Main Content */}
             </div>
-            {/* /.container-fluid */}
-        </div>
-        {/* End of Main Content */}
-    </div>
-    {/* End of Content Wrapper */}
-  </>
-  )
+            {/* End of Content Wrapper */}
+        </>
+    )
 }
 
 export default Ahi

@@ -2,135 +2,126 @@ import React from 'react'
 import Topbar from './Topbar';
 
 function Message() {
-  return (
-    <>
-    {/* Content Wrapper */}
-    <div id="content-wrapper" className="d-flex flex-column">
-        {/* Main Content */}
-        <div id="content">
-            {<Topbar title="Message"/>}
-            {/* Begin Page Content */}
-            <div className="container-fluid">
-                {/* Content Row Card  */}
-                <div className="row">
-                    {/* Cow Milk supplying (Monthly) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-primary shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Cow Milk supplying{" "}
+    return (
+        <>
+            {/* Content Wrapper */}
+            <div id="content-wrapper" className="d-flex flex-column">
+                {/* Main Content */}
+                <div id="content">
+                    {<Topbar title="Message" />}
+                    {/* Begin Page Content */}
+                    <div className="container-fluid">
+                        {/* Content Row Card  */}
+                        <div className="row">
+                            {/* <div className="container"> */}
+                            <br />
+                            {/* Nav tabs */}
+                            <ul className="nav nav-tabs" role="tablist">
+                                <li className="nav-item">
+                                    <a className="nav-link active" data-bs-toggle="tab" href="#inbox">
+                                        Inbox <span className="badge bg-danger">2</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" data-bs-toggle="tab" href="#sent">
+                                        Sent messages
+                                    </a>
+                                </li>
+                            </ul>
+                            {/* Tab panes */}
+                            <div className="tab-content">
+                                {/* INBOX DIV */}
+                                <div id="inbox" className="container-fluid tab-pane active">
+                                    <br />
+                                    <ul className="pt-5" style={{ listStyleType: "none" }}>
+                                        <div className="py-2">
+                                            <li
+                                                className="bg-primary text-white ps-4"
+                                                style={{ padding: "30px 0px 30px 0px",borderRadius:"20px" }}
+                                            >
+                                                <h5>From : Admin</h5>
+                                                <small>&nbsp;Reguarding your query</small>
+                                                <a href="">
+                                                    <span className="float-end me-5 text-black btn btn-light">Open</span>
+                                                </a>
+                                            </li>
                                         </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            180 Liter's
+                                        <div className="py-2">
+                                            <li
+                                                className="bg-success text-white ps-4 "
+                                                style={{ padding: "30px 0px 30px 0px",borderRadius:"20px" }}
+                                            >
+                                                <h5>From : Supervisor</h5>
+                                                <small>&nbsp;Reguarding milk query</small>
+                                                <a href="">
+                                                    <span className="float-end me-5 text-black btn btn-light">Open</span>
+                                                </a>
+                                            </li>
                                         </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-primary p-2">
-                                            Month
-                                        </span>
-                                    </div>
+                                    </ul>
+                                </div>
+                                {/* SENT MSG DIV */}
+                                <div id="sent" className="container-fluid tab-pane fade">
+                                    <br />
+                                    <ul className="pt-5" style={{ listStyleType: "none" }}>                                    
+                                    <div className="py-2">
+                                        <li
+                                            className="bg-primary text-white ps-4"
+                                            style={{ padding: "30px 0px 30px 0px",borderRadius:"20px" }}
+                                        >
+                                            <h5>Me</h5>
+                                            <span>&nbsp;Query about milk collection</span>
+                                            <a href="">
+                                                <span className="float-end me-5 text-black btn btn-light">
+                                                    Open
+                                                </span>
+                                            </a>
+                                        </li>
+                                        </div>
+                                        
+                                        <div className="py-2">
+                                        <li
+                                            className="bg-success text-white ps-4"
+                                            style={{ padding: "30px 0px 30px 0px",borderRadius:"20px" }}
+                                        >
+                                            <h5>Me</h5>
+                                            <span>&nbsp;Query about fat</span>
+                                            <a href="">
+                                                <span className="float-end me-5 text-black btn btn-light">
+                                                    Open
+                                                </span>
+                                            </a>
+                                        </li>
+                                        </div>
+                                        
+                                        <div className="py-2">
+                                        <li
+                                            className="bg-primary text-white ps-4"
+                                            style={{ padding: "30px 0px 30px 0px",borderRadius:"20px" }}
+                                        >
+                                            <h5>Me</h5>
+                                            <span>&nbsp;Query about milk animal health</span>
+                                            <a href="">
+                                                <span className="float-end me-5 text-black btn btn-light">
+                                                    Open
+                                                </span>
+                                            </a>
+                                        </li>
+                                        </div>
+                                    </ul>
                                 </div>
                             </div>
+                            {/* </div> */}
                         </div>
                     </div>
-                    {/* Buffelo Milk supplying (Monthly) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-success shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Buffelo Milk supplying
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            120 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-primary p-2">
-                                            Month
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Cow Milk supplying (Day) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-info shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Cow Milk supplying{" "}
-                                        </div>
-                                        <div className="row no-gutters align-items-center">
-                                            <div className="col-auto">
-                                                <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                                    8 Liter's
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-dark p-2">Day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Buffelo Milk supplying (Day) Card Example */}
-                    <div className="col-xl-3 col-md-6 mb-4">
-                        <div className="card border-left-warning shadow h-100 py-2">
-                            <div className="card-body">
-                                <div className="row no-gutters align-items-center">
-                                    <div className="col mr-2">
-                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Buffelo Milk supplying
-                                        </div>
-                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                            9 Liter's
-                                        </div>
-                                    </div>
-                                    <div className="col-auto">
-                                        <span className="badge text-white bg-dark p-2">Day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* /.container-fluid */}
                 </div>
-                {/* Content Row Overview Chart*/}
-                <div className="row">
-                    {/* Area Chart */}
-                    <div className="col-xl-12 col-lg-12">
-                        <div className="card shadow mb-4">
-                            {/* Card Header - Dropdown */}
-                            <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 className="m-0 font-weight-bold text-primary">
-                                    Overview
-                                </h6>
-                            </div>
-                            {/* Card Body */}
-                            <div className="card-body">
-                                <div className="chart-area">
-                                    <canvas id="myAreaChart" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/* End of Main Content */}
             </div>
-            {/* /.container-fluid */}
-        </div>
-        {/* End of Main Content */}
-    </div>
-    {/* End of Content Wrapper */}
-    
-</>
-  )
+            {/* End of Content Wrapper */}
+
+        </>
+    )
 }
 
 export default Message;
