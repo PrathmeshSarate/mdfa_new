@@ -3,7 +3,7 @@ import Topbar from "./Topbar";
 import Chart from "react-apexcharts";
 
 function Overview() {
-  const [options, setobject] = useState({
+  const [options] = useState({
     chart: {
       id: "apexchart-example",
     },
@@ -12,7 +12,7 @@ function Overview() {
     },
   });
 
-  const [series, setseries] = useState([
+  const [series] = useState([
     {
       name: "Liter's",
       data: [30+"d", 40, 35, 50, 49, 60, 70, 91, 125,100,130,135],

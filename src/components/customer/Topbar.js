@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import profilePic from './img/undraw_profile.svg'
 
 function Topbar(props) {
@@ -22,15 +23,15 @@ function Topbar(props) {
                     <div className="topbar-divider d-none d-sm-block" />
                     {/* Nav Item - User Information */}
                     <li className="nav-item ">
-                        <a className="nav-link" href="#" role="button">
+                        <Link className="nav-link" role="button">
                             <span className="mr-2 d-none d-lg-inline text-gray-600 small">
                                 Mr. ABC XYZ
                             </span>
-                            <img
+                            <img alt='Profile'
                                 className="img-profile rounded-circle"
                                 src={profilePic}
                             />
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
