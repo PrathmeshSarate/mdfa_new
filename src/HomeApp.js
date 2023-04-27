@@ -595,7 +595,6 @@ function HomeApp() {
                     rows={6}
                     placeholder="Message"
                     required=""
-                    defaultValue={""}
                   />
                 </div>
                 <div className="col-md-12 text-center">

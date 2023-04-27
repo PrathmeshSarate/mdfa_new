@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 function Login() {
-    const uniBackColor = "#4154f1"
+  const uniBackColor = "#4154f1"
   return (
     <>
       <div className="container mt-5">
@@ -45,9 +45,12 @@ function Login() {
                             </div>
                           </div>
                           <div className="col-12">
-                            
+                            <div className="btn  px-4 float-start mt-4">
+                              <Link className="btn btn-danger" to="/">Cancel</Link>
+                            </div>
+
                             <Link to="/member/overview"
-                              type="submit" style={{backgroundColor:uniBackColor,color:"white"}}
+                              type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}
                               className="btn  px-4 float-end mt-4"
                             >
                               Login
@@ -57,8 +60,8 @@ function Login() {
                       </div>
                     </div>
                     <div className="col-md-5 ps-0 d-none d-md-block">
-                      <div className="form-right h-100 text-white text-center pt-5" style={{backgroundColor:uniBackColor}}>
-                        <i className="bi bi-person-square" style={{fontSize: "100px"}}/>
+                      <div className="form-right h-100 text-white text-center pt-5" style={{ backgroundColor: uniBackColor }}>
+                        <i className="bi bi-person-square" style={{ fontSize: "100px" }} />
                         <h2 className="fs-1">Login</h2>
                         <small>Don't share your password with anyone.</small>
                       </div>
@@ -68,7 +71,7 @@ function Login() {
               </div>
             </div>
           </div>
-        
+
 
         </div>
       </div>
