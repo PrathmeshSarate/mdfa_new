@@ -120,7 +120,7 @@ function HomeApp() {
                 >
                   <span>Read More</span>
                   <i className="bi bi-arrow-right" />
-                </a>
+                </Link>
               </div> */}
             </div>
           </div>
@@ -172,9 +172,9 @@ function HomeApp() {
                 owning households in and around Kolhapur district. Milk is
                 collected from 1220 villages.
               </p>
-              <a className="read-more">
+              <Link className="read-more">
                 <span>Read More</span> <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -186,9 +186,9 @@ function HomeApp() {
                 societies (DCS) on 443 milk routes for Milk procurement
                 every day.
               </p>
-              <a className="read-more">
+              <Link className="read-more">
                 <span>Read More</span> <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -200,9 +200,9 @@ function HomeApp() {
                 Flood-I .Expanded 200 M.T. Capacity CFP in 1992 under
                 Operation Flood-II.
               </p>
-              <a className="read-more">
+              <Link className="read-more">
                 <span>Read More</span> <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -215,9 +215,9 @@ function HomeApp() {
                 breeding, feeding, management &amp; also health care of the
                 cows &amp; buffaloes.
               </p>
-              <a className="read-more">
+              <Link className="read-more">
                 <span>Read More</span> <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -231,9 +231,9 @@ function HomeApp() {
                 This programme is designed to educate all above members, at
                 village level with their convenience.
               </p>
-              <a className="read-more">
+              <Link className="read-more">
                 <span>Read More</span> <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -247,9 +247,9 @@ function HomeApp() {
                 encouraged to become members and share the responsibilities
                 of managing the dairy cooperative
               </p>
-              <a className="read-more">
+              <Link className="read-more">
                 <span>Read More</span> <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -628,41 +628,41 @@ function HomeApp() {
             </Link>
             <p>Maharashtra Top rated Milk Producer Company</p>
             <div className="social-links mt-3">
-              <a className="twitter">
+              <Link className="twitter">
                 <i className="bi bi-twitter" />
-              </a>
-              <a className="facebook">
+              </Link>
+              <Link className="facebook">
                 <i className="bi bi-facebook" />
-              </a>
-              <a className="instagram">
+              </Link>
+              <Link className="instagram">
                 <i className="bi bi-instagram" />
-              </a>
-              <a className="linkedin">
+              </Link>
+              <Link className="linkedin">
                 <i className="bi bi-linkedin" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-2 col-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li>
-                <i className="bi bi-chevron-right" /> <a >Home</a>
+                <i className="bi bi-chevron-right" /> <Link >Home</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >About us</a>
+                <Link >About us</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Services</a>
+                <Link >Services</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Terms of service</a>
+                <Link >Terms of service</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Privacy policy</a>
+                <Link >Privacy policy</Link>
               </li>
             </ul>
           </div>
@@ -671,26 +671,26 @@ function HomeApp() {
             <ul>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Milk Producer</a>
+                <Link >Milk Producer</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Societies</a>
+                <Link >Societies</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Cattlefeed Plant</a>
+                <Link >Cattlefeed Plant</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Animal Health</a>
+                <Link >Animal Health</Link>
               </li>
               <li>
                 <i className="bi bi-chevron-right" />{" "}
-                <a >Gram Vikas Yojana</a>
+                <Link >Gram Vikas Yojana</Link>
               </li>
               <li>
-                <i className="bi bi-chevron-right" /> <a >WDCLD</a>
+                <i className="bi bi-chevron-right" /> <Link >WDCLD</Link>
               </li>
             </ul>
           </div>
