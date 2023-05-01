@@ -50,8 +50,7 @@ function Login() {
                             </div>
 
                             <Link to="/owner/overview"
-                              type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}
-                              className="btn  px-4 float-end mt-4"
+                              type="submit" className="btn btn-info px-4 float-end mt-4 ms-5"
                             >
                               Owner
                             </Link>
@@ -59,7 +58,7 @@ function Login() {
                               type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}
                               className="btn  px-4 float-end mt-4"
                             >
-                              Login
+                              Customer
                             </Link>
                           </div>
                         </form>
