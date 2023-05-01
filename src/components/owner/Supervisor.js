@@ -13,8 +13,9 @@ function Profile() {
           {/* Begin Page Content */}
           <div className="container-fluid">
             <div className="row">
-            <h4>Add new Supervisor</h4>
+
               <div className="col-md-5">
+                <h4 className="mb-4 text-black">Add new Supervisor</h4>
                 <div className="mb-3">
                   <label
                     htmlFor="exampleFormControlInput1"
@@ -82,13 +83,12 @@ function Profile() {
               </div>
 
               <div className="col-md-7">
-                <br />
                 <div class="card">
-                  <div class="card-header">List of Supervior</div>
+                  <div class="card-header text-black"><h4>List of Supervisor</h4></div>
                   <div class="card-body">
                   <table class="table">
                     <thead>
-                        <tr>
+                        <tr className="text-center">
                             <th>Name</th>
                             <th>Phone</th>
                             <th>Action</th>
@@ -98,17 +98,26 @@ function Profile() {
                         <tr>
                             <td>ABC</td>
                             <td>+91 01234 56789</td>
-                            <td><Link className="float-end btn btn-info" to="/">Edit</Link></td>
+                            <td>
+                                <Link className="float-start btn btn-info " to="/">Edit</Link> 
+                                <Link className="float-end btn btn-danger" to="/">Delete</Link>
+                            </td>
                         </tr>
                         <tr>
                             <td>PQR</td>
                             <td>+91 01234 56789</td>
-                            <td><Link className="float-end btn btn-info" to="/">Edit</Link></td>
+                            <td>
+                                <Link className="float-start btn btn-info " to="/">Edit</Link> 
+                                <Link className="float-end btn btn-danger" to="/">Delete</Link>
+                            </td>
                         </tr>
                         <tr>
                             <td>XYZ</td>
                             <td>+91 01234 56789</td>
-                            <td><Link className="float-end btn btn-info" to="/">Edit</Link></td>
+                            <td>
+                                <Link className="float-start btn btn-info " to="/">Edit</Link> 
+                                <Link className="float-end btn btn-danger" to="/">Delete</Link>
+                            </td>
                         </tr>
                     </tbody>
                     </table>
