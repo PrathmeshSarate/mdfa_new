@@ -49,6 +49,12 @@ function Login() {
                               <Link className="btn btn-danger" to="/">Cancel</Link>
                             </div>
 
+                            <Link to="/owner/overview"
+                              type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}
+                              className="btn  px-4 float-end mt-4"
+                            >
+                              Owner
+                            </Link>
                             <Link to="/member/overview"
                               type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}
                               className="btn  px-4 float-end mt-4"
