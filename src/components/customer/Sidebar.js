@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import { Link, useLocation } from "react-router-dom";
+// import './css/sb-admin-2.min.css'
 function Sidebar() {
 
     let location = useLocation();
@@ -8,7 +9,6 @@ function Sidebar() {
         // console.log(location.pathname);
     }, [location]);
 
-    
     return (
         <>
             {/* Sidebar */}

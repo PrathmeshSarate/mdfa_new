@@ -2,7 +2,7 @@ import React from "react";
 import Topbar from "./Topbar";
 import { Link } from 'react-router-dom'
 
-function Profile() {
+function OwnerAddSupervisor() {
   return (
     <>
       {/* Content Wrapper */}
@@ -83,43 +83,43 @@ function Profile() {
               </div>
 
               <div className="col-md-7">
-                <div class="card">
-                  <div class="card-header text-black"><h4>List of Supervisor</h4></div>
-                  <div class="card-body">
-                  <table class="table">
-                    <thead>
+                <div className="card">
+                  <div className="card-header text-black"><h4>List of Supervisor</h4></div>
+                  <div className="card-body">
+                    <table className="table">
+                      <thead>
                         <tr className="text-center">
-                            <th>Name</th>
-                            <th>Phone</th>
-                            <th>Action</th>
+                          <th>Name</th>
+                          <th>Phone</th>
+                          <th>Action</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                      </thead>
+                      <tbody>
                         <tr>
-                            <td>ABC</td>
-                            <td>+91 01234 56789</td>
-                            <td>
-                                <Link className="float-start btn btn-info " to="/">Edit</Link> 
-                                <Link className="float-end btn btn-danger" to="/">Delete</Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>PQR</td>
-                            <td>+91 01234 56789</td>
-                            <td>
-                                <Link className="float-start btn btn-info " to="/">Edit</Link> 
-                                <Link className="float-end btn btn-danger" to="/">Delete</Link>
-                            </td>
+                          <td>ABC</td>
+                          <td>+91 01234 56789</td>
+                          <td>
+                            <Link className="float-start btn btn-info " to="/">Edit</Link>
+                            <Link className="float-end btn btn-danger" to="/">Delete</Link>
+                          </td>
                         </tr>
                         <tr>
-                            <td>XYZ</td>
-                            <td>+91 01234 56789</td>
-                            <td>
-                                <Link className="float-start btn btn-info " to="/">Edit</Link> 
-                                <Link className="float-end btn btn-danger" to="/">Delete</Link>
-                            </td>
+                          <td>PQR</td>
+                          <td>+91 01234 56789</td>
+                          <td>
+                            <Link className="float-start btn btn-info " to="/">Edit</Link>
+                            <Link className="float-end btn btn-danger" to="/">Delete</Link>
+                          </td>
                         </tr>
-                    </tbody>
+                        <tr>
+                          <td>XYZ</td>
+                          <td>+91 01234 56789</td>
+                          <td>
+                            <Link className="float-start btn btn-info " to="/">Edit</Link>
+                            <Link className="float-end btn btn-danger" to="/">Delete</Link>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                     {/* <ul style={{listStyleType:"decimal;"}}>
                         <li className="my-3">ABC <Link className="float-end btn btn-info" to="/">Edit</Link></li>
@@ -141,4 +141,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default OwnerAddSupervisor;

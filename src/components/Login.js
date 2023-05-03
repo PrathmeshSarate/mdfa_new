@@ -45,21 +45,14 @@ function Login() {
                             </div>
                           </div>
                           <div className="col-12">
-                            <div className="btn  px-4 float-start mt-4">
-                              <Link className="btn btn-danger" to="/">Cancel</Link>
-                            </div>
 
-                            <Link to="/owner/overview"
-                              type="submit" className="btn btn-info px-4 float-end mt-4 ms-5"
-                            >
-                              Owner
-                            </Link>
-                            <Link to="/member/overview"
-                              type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}
-                              className="btn  px-4 float-end mt-4"
-                            >
-                              Customer
-                            </Link>
+                            <Link to="/owner/overview" type="submit" className="btn btn-outline-info px-4 float-start mt-4 ms-2" >Owner</Link>
+
+                            <Link to="/member/overview" type="submit" style={{ backgroundColor: uniBackColor, color: "white" }}className="btn px-4 float-end mt-4 ms-5" >Customer</Link>
+
+                            <Link to="/supervisor/overview" type="submit" className="btn btn-warning px-4 float-end mt-4 ms-2" >Supervisor</Link>
+
+                            <Link to="/" type="submit" className="btn btn-danger px-4 float-start mt-4" >←</Link>
                           </div>
                         </form>
                       </div>

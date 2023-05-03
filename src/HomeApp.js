@@ -1,8 +1,14 @@
 import React from 'react'
-import dai from "./assets/img/dai.jpg";
 import { Link } from 'react-router-dom'
+import './assets/style.css';
+import './assets/vendor/bootstrap/css/bootstrap.min.css';
+import './assets/vendor/bootstrap-icons/bootstrap-icons.css';
+import './assets/vendor/glightbox/css/glightbox.min.css';
+import './assets/vendor/remixicon/remixicon.css';
+import './assets/vendor/swiper/swiper-bundle.min.css';
 
 function HomeApp() {
+  
   return (
 <>
     <header id="header" className="header fixed-top bg-white">
@@ -19,29 +25,29 @@ function HomeApp() {
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <Link className="nav-link scrollto active" to="#hero">
+              <a className="nav-link scrollto active" href="#hero">
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="#about">
+              <a className="nav-link scrollto" href="#about">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="#services">
+              <a className="nav-link scrollto" href="#services">
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="#team">
+              <a className="nav-link scrollto" href="#team">
                 Team
-              </Link>
+              </a>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="#contact">
+              <a className="nav-link scrollto" href="#contact">
                 Contact
-              </Link>
+              </a>
             </li>
             <li>
               <Link
@@ -60,7 +66,7 @@ function HomeApp() {
   {/* End Header */ }
 
   {/* ======= Hero Section ======= */ }
-  <section id="hero" className="hero d-flex align-items-center">
+  <section id="hero" className="hero d-flex align-items-center" style={{padding: "100px 0"}}>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -71,7 +77,7 @@ function HomeApp() {
           <div>
             <div className="text-center text-lg-start">
               <Link
-                to="#about"
+                to="/login"
                 className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
               >
                 <span>Get Started</span>
@@ -85,7 +91,7 @@ function HomeApp() {
         //
         //
         >
-          <img src={dai} className="img-fluid" alt="" />
+          <img src='./assets/img/dai.jpg' className="img-fluid" alt="" />
         </div>
       </div>
     </div>
@@ -94,7 +100,7 @@ function HomeApp() {
 
   <main id="main">
     {/* ======= About Section ======= */}
-    <section id="about" className="about">
+    <section id="about" className="about" style={{padding: "100px 0"}}>
       <div className="container">
       <header className="section-header">
           <h2>About</h2>
@@ -156,7 +162,7 @@ function HomeApp() {
     {/* End Counts Section */}
 
     {/* ======= Services Section ======= */}
-    <section id="services" className="services">
+    <section id="services" className="services" style={{padding: "100px 0"}}>
       <div className="container">
         <header className="section-header">
           <h2>Services</h2>
@@ -258,7 +264,7 @@ function HomeApp() {
     {/* End Services Section */}
 
     {/* ======= Team Section ======= */}
-    <section id="team" className="team">
+    <section id="team" className="team" style={{padding: "100px 0"}}>
       <div className="container">
         <header className="section-header">
           <h2>Body</h2>
@@ -500,7 +506,7 @@ function HomeApp() {
     {/* End Clients Section */}
 
     {/* ======= Contact Section ======= */}
-    <section id="contact" className="contact">
+    <section id="contact" className="contact" style={{padding: "100px 0"}}>
       <div className="container">
         <header className="section-header">
           <h2>Contact</h2>
