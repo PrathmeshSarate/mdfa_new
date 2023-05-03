@@ -149,7 +149,7 @@ function App() {
           />
 
           <Route
-            path="/supervisor/message"
+            path="/supervisor/MessageSupervisor"
             element={
               <React.Fragment>
                 {/* Page Wrapper */}
@@ -201,7 +201,7 @@ function App() {
           />
 
           <Route
-            path="/supervisor/ahi"
+            path="/supervisor/AhiSupervisor"
             element={
               <React.Fragment>
                 <div id="wrapper">

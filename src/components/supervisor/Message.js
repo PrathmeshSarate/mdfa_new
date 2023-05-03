@@ -4,13 +4,35 @@ import Topbar from './Topbar';
 function Message() {
     return (
         <>
-            {/* Content Wrapper */}
-            <div id="content-wrapper" className="d-flex flex-column">
-                {/* Main Content */}
-                <div id="content">
-                    {<Topbar title="Message" />}
-                    {/* Begin Page Content */}
-                    <div className="container-fluid">
+        {/* CONTENT */}
+        <section className="dash" id="contentsupervisor">
+          <Topbar />
+          {/* MAIN */}
+          <main style={{ backgroundColor: "#eee" }}>
+            <div className="head-title">
+              <div className="left">
+                <h1>Message</h1>
+                <ul className="breadcrumb">
+                  <li>
+                    <a href="#">Supervisor</a>
+                  </li>
+                  <li>
+                    <i className="bx bx-chevron-right" />
+                  </li>
+                  <li>
+                    <a className="active" href="#">
+                      Message
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            {/* START FORM TO ADD THE MEMEBER  */}
+  
+            <div className="table-data">
+             {/* Begin Page Content */}
+             <div className="container-fluid">
                         {/* Content Row Card  */}
                         <div className="row">
                             {/* <div className="container"> */}
@@ -115,12 +137,14 @@ function Message() {
                         </div>
                     </div>
                     {/* /.container-fluid */}
-                </div>
-                {/* End of Main Content */}
             </div>
-            {/* End of Content Wrapper */}
-
-        </>
+  
+            {/* END FORM TO ADD THE MEMEBER  */}
+          </main>
+          {/* MAIN */}
+        </section>
+        {/* CONTENT */}
+      </>
     )
 }
 

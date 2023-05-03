@@ -9,7 +9,7 @@ function OwnerAddSupervisor() {
       <div id="content-wrapper" className="d-flex flex-column">
         {/* Main Content */}
         <div id="content">
-          {<Topbar title="Supervisor" />}
+          {<Topbar/>}
           {/* Begin Page Content */}
           <div className="container-fluid">
             <div className="row">
@@ -28,7 +28,6 @@ function OwnerAddSupervisor() {
                     className="form-control"
                     id="name"
                     placeholder="ABC XYZ"
-                    value="ABC XYZ"
                   />
                 </div>
                 <div className="mb-3">
@@ -43,7 +42,6 @@ function OwnerAddSupervisor() {
                     className="form-control"
                     id="exampleFormControlInput1"
                     placeholder="abcxyz@gmail.com"
-                    value="abcxyz@gmail.com"
                   />
                 </div>
                 <div className="mb-3">
@@ -58,7 +56,6 @@ function OwnerAddSupervisor() {
                     className="form-control"
                     id="phone"
                     placeholder="+91 01234 56789"
-                    value="+91 01234 56789"
                   />
                 </div>
                 <div className="mb-3">
@@ -72,7 +69,6 @@ function OwnerAddSupervisor() {
                     className="form-control"
                     id="address"
                     rows={3}
-                    defaultValue={"Near Chitranagari,Kangalgav,Kolhapur"}
                     placeholder={"Near Chitranagari,Kangalgav,Kolhapur"}
                   />
                 </div>

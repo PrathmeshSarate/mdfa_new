@@ -5,22 +5,23 @@ import { Link } from "react-router-dom";
 
 import Clock from "react-live-clock";
 
-var date = new Date();
-var hours = date.getHours();
-var minutes = date.getMinutes();
-hours = hours % 12;
-hours = hours ? hours : 12; // the hour '0' should be '12'
-minutes = minutes < 10 ? "0" + minutes : minutes;
-var timeOfDay;
-if (hours >= 8 && hours < 12) {
-  timeOfDay = "Day";
-} else if (hours >= 16 && hours < 18) {
-  timeOfDay = "Evening";
-} else {
-  timeOfDay = "-";
-}
 
 function DirectSell() {
+  var date = new Date();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  var timeOfDay;
+  if (hours >= 8 && hours < 12) {
+    timeOfDay = "Day";
+  } else if (hours >= 4 && hours < 6) {
+    timeOfDay = "Evening";
+  } else {
+    timeOfDay = "-";
+  }
+  console.log(timeOfDay);
   return (
     <>
       {/* CONTENT */}

@@ -5,22 +5,23 @@ import { Link } from "react-router-dom";
 
 import Clock from "react-live-clock";
 
-var date = new Date();
-var hours = date.getHours();
-var minutes = date.getMinutes();
-hours = hours % 12;
-hours = hours ? hours : 12; // the hour '0' should be '12'
-minutes = minutes < 10 ? "0" + minutes : minutes;
-var timeOfDay;
-if (hours >= 8 && hours < 12) {
-  timeOfDay = "Day";
-} else if (hours >= 16 && hours < 18) {
-  timeOfDay = "Evening";
-} else {
-  timeOfDay = "Unknown";
-}
 
 function MilkCollection() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    var timeOfDay;
+    if (hours >= 8 && hours < 12) {
+      timeOfDay = "Day";
+    } else if (hours >= 4 && hours < 6) {
+      timeOfDay = "Evening";
+    } else {
+      timeOfDay = "-";
+    }
+    console.log(timeOfDay);
   return (
     <>
       {/* CONTENT */}
@@ -98,7 +99,6 @@ function MilkCollection() {
                     />
                   </div>
                 </div>
-
                 <div style={{ display: "inline-flex" }} className="col-auto">
                   <label
                     htmlFor="inputPassword2"
@@ -115,7 +115,6 @@ function MilkCollection() {
                     />
                   </div>
                 </div>
-                
               </div>
 
               <div className="row g-3 mb-4 d-flex justify-content-end">
@@ -128,7 +127,7 @@ function MilkCollection() {
                   </label>
                   <div className="col-sm">
                     <select
-                      class="custom-select form-control"
+                      className="custom-select form-control"
                       id="inputGroupSelect02"
                     >
                       <option selected> Select </option>

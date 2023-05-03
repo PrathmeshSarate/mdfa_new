@@ -40,8 +40,8 @@ function Sidebar() {
               <span className="text">Milk Collection</span>
             </Link>
           </li>
-          <li>
-            <Link to="#">
+          <li className={`${location.pathname === "/supervisor/MessageSupervisor" ? "active" : ""}`}>
+            <Link to="/supervisor/MessageSupervisor">
               <i className="bx bxs-message-dots" />
               <span className="text">Message</span>
             </Link>
@@ -52,8 +52,8 @@ function Sidebar() {
               <span className="text">Direct Sell</span>
             </Link>
           </li>
-          <li>
-            <Link to="#">
+          <li className={`${location.pathname === "/supervisor/AhiSupervisor" ? "active" : ""}`}>
+            <Link to="/supervisor/AhiSupervisor">
               <i className="bx bx-health" />
               <span className="text">Animal's health info</span>
             </Link>

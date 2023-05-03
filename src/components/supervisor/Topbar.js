@@ -1,9 +1,9 @@
 import React from 'react'
-
 import Clock from "react-live-clock";
+import { Link } from 'react-router-dom';
 import profilePic from './img/undraw_profile.svg'
 
-function Topbar(props) {
+function Topbar() {
     return (
         <>
             {/* NAVBAR */}
@@ -16,9 +16,9 @@ function Topbar(props) {
               />
             </h1>
             <div className="ms-auto">
-              <a aria-readonly title="Your Name displayed here" href="#" className="profile">
+              <Link aria-readonly title="Your Name displayed here" to="#" className="profile">
                 <img src={profilePic} alt="Profile Photo" />
-              </a>
+              </Link>
             </div>
           </nav>
           {/* NAVBAR */}
